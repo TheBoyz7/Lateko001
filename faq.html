@@ -10,7 +10,7 @@
 	
   <!-- Title and description ================================================== -->
   <title>
-  Lateko - Your Blend Between Slang and Swag
+  Lateko - FAQ
   </title>
 
   
@@ -928,7 +928,13 @@ for (var attr in meta) {
 <li class="awemenu-item">
   <a class="engoc_first_item" href="faq.html">FAQ</a>
 </li>
+
   
+  
+
+
+
+
   
   
   
@@ -984,43 +990,86 @@ for (var attr in meta) {
 </header>
 
 
+
+
+
+
 <div id="top">
     <br>
     <br>
     <br>
-    <h1  style="color: white;">About</h1>
+    <h1  style="color: white;">Frequently Asked Questions</h1>
 </div>
-<div id="bodyy" style="width: 92%; margin-left: 4%;">
-    <!-- <h2>About Us: We Amplify Naija Slang & Community</h2> -->
-   
-    <p >Tired of boring clothes that say nothing about you? At Lateko, we’re more than just threads, we’re a movement. We celebrate Nigerian slang and pop culture, building a community where you feel seen, heard, and understood.</p>
-   
-    <p><strong>We’re not just selling tees, we’re sparking conversations.</strong> Every design emblazoned on our shirts isn’t just a print, it’s a secret handshake, a shared chuckle, a connection across borders and generations. It’s your Naija story, amplified.</p>
-   
-    <h3>Here’s how we bring the fire online:</h3>
-   
-    <ul>
-      <li><strong>A shop that pops:</strong> Browse our Basic, Gold, and Platinum collections (with sweet membership perks!), explore the hidden meanings behind each design with our QR code cypher, and share your fire with the community in our vibrant comment section.</li>
-      <li><strong>Raffles with rhythm:</strong> Every Lateko purchase becomes a shot at our monthly cash prize. No gimmicks, just pure Naija luck flowing your way.</li>
-      <li><strong>Social media that sizzles:</strong> We bring the heat to Facebook, Instagram, and Twitter with killer content, slang explainers, and behind-the-scenes peeks. Get ready for a feast of stories, humor, and pure Naija love.</li>
-      <li><strong>Influencers who inspire:</strong> We’re teaming up with the hottest Nigerian influencers to spread the Lateko word and connect with like-minded spirits across the globe.</li>
-      <li><strong>Engagement fiesta:</strong> We don’t just post and ghost. Our social media ninjas are all about real connections, responding to comments and messages with the same fire we put into our tees.</li>
-      <li><strong>Data decoded:</strong> We track, analyze, and refine. Your online presence evolves with every click, like a finely-tuned Naija beat.</li>
-    </ul>
-   
-    <p><strong>Join the movement. Wear your story. Amplify your voice.</strong></p>
-   
-    <p><strong>Ready to paint the web with Lateko? Let’s chat!</strong></p>
-   
-    <button class="chat-button">Chat Now</button>
-</div>
-   
-   
+<main style="width: 92%; margin-left: 4%;">
 
+    <section id="faq-categories">
+      <h2>Browse by Category:</h2>
+      <ul>
+        <li><a href="#ordering" class="smooth-scroll">Ordering & Shipping</a></li>
+        <li><a href="#products" class="smooth-scroll">Products & Sizing</a></li>
+        <li><a href="#payments" class="smooth-scroll">Payments & Returns</a></li>
+        <li><a href="#membership" class="smooth-scroll">Membership & Rewards</a></li>
+        <li><a href="#slang" class="smooth-scroll">Slang & Culture</a></li>
+      </ul>
+    </section>
 
+    <section id="faq-content">
+      <h2 id="ordering">Ordering & Shipping</h2>
+      <ul>
+        <li>
+          <h3>How do I place an order?</h3>
+          <p>...</p>
+        </li>
+        <li>
+          <h3>What are your shipping options and costs?</h3>
+          <p>...</p>
+        </li>
+        <li>
+          <h3>How long will it take to receive my order?</h3>
+          <p>...</p>
+        </li>
+        ...
+      </ul>
 
+      <h2 id="products">Products & Sizing</h2>
+      <ul>
+        <li>
+          <h3>What are the different collections available?</h3>
+          <p>...</p>
+        </li>
+        <li>
+          <h3>What materials are your tees made of?</h3>
+          <p>...</p>
+        </li>
+        <li>
+          <h3>How can I find the right size for me?</h3>
+          <p>...</p>
+        </li>
+        ...
+      </ul>
 
-
+      <script>
+        const smoothScrollLinks = document.querySelectorAll(".smooth-scroll");
+    
+        //Adding Click event listeners
+        smoothScrollLinks.forEach(link =>{
+            link.addEventListener("click", function(event){
+                event.preventDefault(); //preventing full page refresh
+    
+                const targetId = this.getAttribute("href"); //get target Id
+                const targetElement = document.querySelector(targetId); //find section
+    
+                if (targetElement){
+                    targetElement.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    })
+                }
+            })
+        })
+    </script>
+      </section>
+  </main>
 
 
  

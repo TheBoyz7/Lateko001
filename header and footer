@@ -912,7 +912,7 @@ for (var attr in meta) {
   
   
  
-   <li class="awemenu-item">
+  <li class="awemenu-item">
     <a class="engoc_first_item" href="about.html">About Us</a>
 </li>
   
@@ -924,6 +924,12 @@ for (var attr in meta) {
 <li class="awemenu-item">
   <a class="engoc_first_item" href="contact.html">Contact Us</a>
 </li>
+
+<li class="awemenu-item">
+  <a class="engoc_first_item" href="faq.html">FAQ</a>
+</li>
+
+  
   
 
 
@@ -972,6 +978,12 @@ for (var attr in meta) {
       <div class="engoc_custom_search_hd3 hidden-xs hidden-sm pull-right">
         <!-- /snippets/search-bar.liquid -->
 
+        <form method="get" class="searchform" action="/search" role="search">
+          <label class="sr-only">search</label>
+          <input type="hidden" name="type" value="product">
+          <input type="text" id="engo_autocomplate" value="" autocomplete="off" placeholder="Search for something perfect" aria-label="Search for something perfect" name="q">
+          <button type="button" class="btn btn-primary submit">Search</button>
+        </form>
 
 <div id="productSearchResults" class="hidden-xs" style="display: none;">
 <ul class="search-results"></ul>
